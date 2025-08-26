@@ -5,8 +5,8 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import { getDictionary } from "@/i18n/get-dictionary";
 
-export default async function Home({ params: { locale } }:{ params: { locale: "en"|"de" } }) {
-  const dict = await getDictionary(locale);
+export default function Home({ params: { locale } }:{ params: { locale: "en"|"de" } }) {
+  const dict = getDictionary(locale);
   return (
     <main>
       <Hero dict={dict} />
