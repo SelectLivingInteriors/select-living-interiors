@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --sli-btn: #b5ada2; }
+body { @apply bg-neutral-50 text-neutral-900; }
+a { @apply cursor-pointer; }
